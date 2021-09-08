@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_1 = require("./logger");
-const throttleTime = require("./throttleTime");
+const map = require("./map");
 // exec(startWith);
 // exec(combineLatest);
 // exec(merge);
@@ -23,5 +23,8 @@ const throttleTime = require("./throttleTime");
 // exec(first);
 // exec(take);
 // exec(takeUntil);
-(0, logger_1.exec)(throttleTime);
+// exec(throttleTime);
+// exec(bufferTime);
+// exec(concatMap);
+(0, logger_1.exec)(map);
 //# sourceMappingURL=index.js.map

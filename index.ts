@@ -21,6 +21,9 @@ import * as first from './first';
 import * as take from './take';
 import * as takeUntil from './takeUntil';
 import * as throttleTime from './throttleTime';
+import * as bufferTime from './bufferTime';
+import * as concatMap from './concatMap';
+import * as map from './map';
 
 // exec(startWith);
 // exec(combineLatest);
@@ -43,4 +46,7 @@ import * as throttleTime from './throttleTime';
 // exec(first);
 // exec(take);
 // exec(takeUntil);
-exec(throttleTime);
+// exec(throttleTime);
+// exec(bufferTime);
+// exec(concatMap);
+exec(map);
