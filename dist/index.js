@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_1 = require("./logger");
-const shareReplay = require("./shareReplay");
+const throttleTime = require("./throttleTime");
 // exec(startWith);
 // exec(combineLatest);
 // exec(merge);
@@ -16,5 +16,12 @@ const shareReplay = require("./shareReplay");
 // exec(catchError);
 // exec(retry);
 // exec(share);
-(0, logger_1.exec)(shareReplay);
+// exec(shareReplay);
+// exec(debounce);
+// exec(distinctUntilChanged);
+// exec(filter);
+// exec(first);
+// exec(take);
+// exec(takeUntil);
+(0, logger_1.exec)(throttleTime);
 //# sourceMappingURL=index.js.map
