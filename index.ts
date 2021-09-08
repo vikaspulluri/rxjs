@@ -7,6 +7,9 @@ import * as forkJoin from './forkJoin';
 import * as withLatestFrom from './withLatestFrom';
 import * as zip from './zip';
 import * as race from './race';
+import * as pairwise from './pairwise';
+import * as from from './from';
+import * as of from './of';
 
 // exec(startWith);
 // exec(combineLatest);
@@ -15,4 +18,7 @@ import * as race from './race';
 // exec(forkJoin);
 // exec(withLatestFrom);
 // exec(zip);
-exec(race);
+// exec(race);
+// exec(pairwise);
+// exec(from);
+exec(of);
