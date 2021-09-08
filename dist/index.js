@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_1 = require("./logger");
-const of = require("./of");
+const shareReplay = require("./shareReplay");
 // exec(startWith);
 // exec(combineLatest);
 // exec(merge);
@@ -12,5 +12,9 @@ const of = require("./of");
 // exec(race);
 // exec(pairwise);
 // exec(from);
-(0, logger_1.exec)(of);
+// exec(of);
+// exec(catchError);
+// exec(retry);
+// exec(share);
+(0, logger_1.exec)(shareReplay);
 //# sourceMappingURL=index.js.map
