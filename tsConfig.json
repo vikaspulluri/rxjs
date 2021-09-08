@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "dist/",
+    "declaration": false,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true,
+    "noUnusedParameters": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,    
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "es2017"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules",
+    "test"
+  ]
+}
