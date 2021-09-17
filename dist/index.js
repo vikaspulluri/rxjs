@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_1 = require("./logger");
-const scan = require("./scan");
+const observable = require("./observable");
 // exec(startWith);
 // exec(combineLatest);
 // exec(merge);
@@ -30,5 +30,11 @@ const scan = require("./scan");
 // exec(mapTo);
 // exec(mergeMap);
 // exec(exhaustMap);
-(0, logger_1.exec)(scan);
+// exec(scan);
+// exec(switchMap);
+// exec(subject);
+// exec(asyncSubject);
+// exec(behaviorSubject);
+// exec(replaySubject);
+(0, logger_1.exec)(observable);
 //# sourceMappingURL=index.js.map
