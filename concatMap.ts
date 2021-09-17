@@ -45,7 +45,7 @@ function mapToPromise() {
 }
 
 export {
-  // concatMapExample,
-  // mergeMapExample,
+  concatMapExample,
+  mergeMapExample,
   mapToPromise
 }

@@ -5,7 +5,7 @@
  *
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.mapToPromise = exports.name = void 0;
+exports.mapToPromise = exports.mergeMapExample = exports.concatMapExample = exports.name = void 0;
 // RxJS v6+
 const logger_1 = require("./logger");
 const rxjs_1 = require("rxjs");
@@ -19,6 +19,7 @@ function concatMapExample() {
     //output: With concatMap: Delayed by: 2000ms, With concatMap: Delayed by: 1000ms
     const subscribe = example.subscribe(val => (0, logger_1.log)(`With concatMap: ${val}`));
 }
+exports.concatMapExample = concatMapExample;
 function mergeMapExample() {
     //emit delay value
     const source = (0, rxjs_1.of)(2000, 1000);
@@ -26,6 +27,7 @@ function mergeMapExample() {
     //output: With mergeMap: Delayed by: 1000ms, With mergeMap: Delayed by: 2000ms
     const subscribe = example.subscribe(val => (0, logger_1.log)(`With mergeMap: ${val}`));
 }
+exports.mergeMapExample = mergeMapExample;
 function mapToPromise() {
     const source = (0, rxjs_1.of)('hello', 'goodbye');
     const promise = val => new Promise(resolve => resolve(`${val} world!`));

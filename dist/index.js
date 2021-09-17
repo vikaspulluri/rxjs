@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_1 = require("./logger");
-const map = require("./map");
+const scan = require("./scan");
 // exec(startWith);
 // exec(combineLatest);
 // exec(merge);
@@ -26,5 +26,9 @@ const map = require("./map");
 // exec(throttleTime);
 // exec(bufferTime);
 // exec(concatMap);
-(0, logger_1.exec)(map);
+// exec(map);
+// exec(mapTo);
+// exec(mergeMap);
+// exec(exhaustMap);
+(0, logger_1.exec)(scan);
 //# sourceMappingURL=index.js.map
