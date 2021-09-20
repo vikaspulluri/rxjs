@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_1 = require("./logger");
-const observable = require("./observable");
+const customObservable = require("./custom-observable");
 // exec(startWith);
 // exec(combineLatest);
 // exec(merge);
@@ -36,5 +36,6 @@ const observable = require("./observable");
 // exec(asyncSubject);
 // exec(behaviorSubject);
 // exec(replaySubject);
-(0, logger_1.exec)(observable);
+// exec(observable);
+(0, logger_1.exec)(customObservable);
 //# sourceMappingURL=index.js.map

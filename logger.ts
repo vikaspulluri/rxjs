@@ -17,3 +17,10 @@ export const exec = (obj) => {
     }
   }
 }
+
+export interface Observer {
+  next?: (value?: any) => any;
+  error?: (value?: any) => any;
+  complete?: () => any;
+  unsubscribe?: () => any;
+}

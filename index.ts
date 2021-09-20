@@ -34,6 +34,7 @@ import * as asyncSubject from './asyncSubject';
 import * as behaviorSubject from './behaviorSubject';
 import * as replaySubject from './replaySubject';
 import * as observable from './observable';
+import * as customObservable from './custom-observable';
 
 // exec(startWith);
 // exec(combineLatest);
@@ -69,4 +70,5 @@ import * as observable from './observable';
 // exec(asyncSubject);
 // exec(behaviorSubject);
 // exec(replaySubject);
-exec(observable);
+// exec(observable);
+exec(customObservable);

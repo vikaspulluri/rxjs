@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.example1 = exports.name = void 0;
+/**
+ * Observables are lazy Push collections of multiple values.
+ * An Observable is a lazily evaluated computation that can synchronously or asynchronously return zero to (potentially) infinite values from the time it's invoked onwards.
+ *
+ */
 exports.name = 'observable';
 const logger_1 = require("./logger");
 const rxjs_1 = require("rxjs");
