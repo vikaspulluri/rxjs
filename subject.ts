@@ -19,7 +19,7 @@ ReplaySubject
 */
 
 // RxJS v6+
-import { Subject, AsyncSubject, BehaviorSubject, ReplaySubject } from 'rxjs';
+import { Subject, AsyncSubject, BehaviorSubject, ReplaySubject, from, multicast, connectable, of } from 'rxjs';
 import * as logger from './logger';
 import { log } from './logger';
 
@@ -110,6 +110,21 @@ function example2() {
 
   NEXT(s)
   */
+}
+
+// Subject is both Observable and Observer(provided callbacks)
+function example3() {
+	const subject = new Subject<number>();
+
+	subject.subscribe({
+		next: (v) => console.log(`observerA: ${v}`),
+	});
+	subject.subscribe({
+		next: (v) => console.log(`observerB: ${v}`),
+	});
+		
+	const observable = from([1, 2, 3]);
+         
 }
 
 export {
